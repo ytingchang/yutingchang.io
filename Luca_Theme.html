@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>LUCA</title>
+    <style>
+        #wrapper{
+            font-family: Arial, Helvetica, sans-serif;
+            width:100%;
+            max-width:1170px;
+            min-width:300px;
+            background-color: #fff;
+            margin: 0 auto;
+            color: rgb(65, 65, 65);
+        }
+
+        #masthead{
+            box-sizing: border-box;
+            height: 450px;
+            padding: 0;
+            position: relative;
+            background-color: #fff;
+            background-image: url(img/hero1.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;   
+            background-position: center top;
+        }
+
+        #masthead h1{
+            font-family: Helvetica, sans-serif;
+            text-align: right;
+            color: #ff8f00;
+            font-size: 1.8em;
+            padding: 0.2em;
+            text-shadow: 0 0 3px #000;
+            margin: 0 0.5em;
+        }
+
+        #logo{
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+       
+        header, article, footer{
+            padding:1em;
+        }
+    
+        #flexbox_gallery{
+		margin: 2.5em 0 0 0;
+        }
+
+        #flexbox_gallery div{
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #flexbox_gallery div div{
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.5em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            margin: 1em 0;
+        }
+
+        #SeaMonster, #Alberto{
+            width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        @media screen and (min-width:576px) {
+            #flexbox_gallery div{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #flexbox_gallery div div{
+                flex-basis: 32%;
+            }
+
+            .responsive_image{
+                height: 250px;
+            }
+           
+            #article_columns{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #col1{
+                flex: 0 1 48%;
+            }
+            #col2{
+                flex: 0 1 48%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="masthead">
+            <img src="img/logo.png" id="logo" alt="Luca Logo">
+        </header>
+                
+        <nav id="nav">
+            <ul>
+                <li><a href="Luca_Home.html">Home</a></li>
+                <li><a href="Luca_Cast.html">Main Cast</a></li>
+                <li><a href="Luca_Theme.html" class="selected">Theme</a></li>
+                <li><a href="Luca_EasterEgg.html">Easter Egg</a></li>
+                <li><a href="Luca_Clips.html">Clips</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <br>
+            <h1>Theme</h1>
+
+        <div id="article_columns">
+            <section id="col1">
+                <p style="line-height: 2em; font-size: 1.1em">The sea monsters, based on old Italian myths and regional folklore, were defined by Casarosa as a "metaphor for feeling different", explaining: "We were also a bit of 'outsiders', so it felt right to use sea monsters to express the idea that we felt a little different and not cool as kids".
+                <img src="img/theme_seamonster.jpeg" id="SeaMonster" alt="SeaMonster">    
+                Producer Andrea Warren expanded: "We always liked the idea that the metaphor of being a sea monster can apply to so many different things. There is a theme of openness, showing oneself and self-acceptance, as well as community acceptance. Confronting the idea that there's more to sea monsters than they realized. You know that they've only seen it through one perspective, one lens, and so I think that that's a wonderful theme in the film, which is that those ideas weren't right and that there's more to learn." Casarosa agreed: "We hope that 'sea monster' could be a metaphor for all [manners] of feeling different — like being a teen or even pre-teen — any moment where you feel odd. It felt like a wonderful way to talk about that and having to accept ourselves first, whatever way we feel different."</p>
+            </section>
+            <section id="col2">
+                <p style="line-height: 2em; font-size: 1.1em">Some have seen Luca and Alberto hiding their true sea monster identities as an allegory for people who are members of the LGBTQ+ community, feeling as though they need to hide their true selves in order to be accepted. Similarities and parallels to director Luca Guadagnino's film Call Me by Your Name, which centers on a romantic relationship between a grown man and teenage boy in Italy, were also pointed out. These prompted the question whether Luca and Alberto are gay; however, Casarosa said that the characters were just friends and that the parallels to Guadagnino's film were only a coincidence, stating: "I love Luca's movies and he's such a talent, but it truly goes without saying that we really willfully went for a pre-pubescent story ... This is all about platonic friendships."<img src="img/theme_lucaandalberto.png" id="Alberto" alt="LucaAndAlberto">
+                </p>
+            </section>
+        </div>
+        </article>
+
+        <footer>&copy; 2021 Ting Chang</footer>
+    </div>
+</body>
+
+</html>

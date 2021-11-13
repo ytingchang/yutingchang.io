@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>LUCA</title>
+    <style>
+        #wrapper{
+            font-family: Arial, Helvetica, sans-serif;
+            width:100%;
+            max-width:1170px;
+            min-width:300px;
+            background-color: #fff;
+            margin: 0 auto;
+            color: rgb(65, 65, 65);
+        }
+
+        #masthead{
+            box-sizing: border-box;
+            height: 450px;
+            padding: 0;
+            position: relative;
+            background-color: #fff;
+            background-image: url(img/hero1.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;   
+            background-position: center top;
+        }
+
+        #logo{
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+       
+        header, article, footer{
+            padding:1em;
+        }
+
+        #flexbox_gallery{
+	    	margin: 2.5em 0 0 0;
+        }
+
+        #flexbox_gallery div{
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #flexbox_gallery div div{
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.5em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            margin: 1em 0;
+        }
+        .responsive_image{
+                height: 250px;
+            }
+
+        @media screen and (min-width:576px) {
+            #flexbox_gallery div{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #flexbox_gallery div div{
+                flex-basis: 32%;
+            }
+
+            .responsive_image{
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="masthead">
+            <img src="img/logo.png" id="logo" alt="Luca Logo">
+        </header>
+                
+        <nav id="nav">
+            <ul>
+                <li><a href="Luca_Home.html">Home</a></li>
+                <li><a href="Luca_Cast.html" class="selected">Main Cast</a></li>
+                <li><a href="Luca_Theme.html">Theme</a></li>
+                <li><a href="Luca_EasterEgg.html">Easter Egg</a></li>
+                <li><a href="Luca_Clips.html">Clips</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <br>
+            <h1>Main Cast</h1>
+            <section id="flexbox_gallery">
+                <div>
+                    <div>
+                        <img src="img/JacobTremblay.jpeg"  class="responsive_image" alt="cast">
+                        <p><strong>Jacob Tremblay</strong><br>as Luca Paguro</p>
+                    </div>
+                    <div>
+                        <img src="img/JackDylanGrazer.jpeg" class="responsive_image" alt="cast">
+                        <p><strong>Jack Dylan Grazer</strong><br>as Alberto Scorfano</p>
+                    </div>
+                    <div>
+                        <img src="img/EmmaBerman.jpeg" class="responsive_image" alt="cast">
+                        <p><strong>Emma Berman</strong><br>as Giulia Marcovaldo</p>       
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/SaverioRaimondo.jpeg" class="responsive_image" alt="cast">
+                        <p><strong>Saverio Raimondo</strong><br>as Ercole Visconti</p>       
+                    </div>
+                    <div>
+                        <img src="img/MayaRudolph.jpeg" class="responsive_image" alt="cast">
+                        <p><strong>Maya Rudolph</strong><br>as Daniela Paguro</p>       
+                    </div>
+                    <div>
+                        <img src="img/MarcoBarricelli.jpeg" class="responsive_image" alt="cast">
+                        <p><strong>Marco Barricelli</strong><br>as Massimo Marcovaldo</p>       
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer>&copy; 2021 Ting Chang</footer>
+    </div>
+</body>
+
+</html>

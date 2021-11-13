@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>LUCA</title>
+    <style>
+        #wrapper{
+            font-family: Arial, Helvetica, sans-serif;
+            width:100%;
+            max-width:1170px;
+            min-width:300px;
+            background-color: #fff;
+            margin: 0 auto;
+            color: rgb(65, 65, 65);
+        }
+
+        #masthead{
+            box-sizing: border-box;
+            height: 450px;
+            padding: 0;
+            position: relative;
+            background-color: #fff;
+            background-image: url(img/hero1.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;   
+            background-position: center top;
+        }
+
+        #masthead h1{
+            font-family: Helvetica, sans-serif;
+            text-align: right;
+            color: #ff8f00;
+            font-size: 1.8em;
+            padding: 0.2em;
+            text-shadow: 0 0 3px #000;
+            margin: 0 0.5em;
+        }
+
+        #logo{
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+       
+        header, article, footer{
+            padding:1em;
+        }
+
+        #flexbox_gallery{
+		margin: 2.5em 0 0 0;
+        }
+
+        #flexbox_gallery div{
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #flexbox_gallery div div{
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.5em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            margin: 1em 0;
+        }
+
+        .image{
+            width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        @media screen and (min-width:576px) {
+            #flexbox_gallery div{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #flexbox_gallery div div{
+                flex-basis: 32%;
+            }
+
+            .responsive_image{
+                height: 250px;
+            }
+           
+            #article_columns{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #col1{
+                flex: 0 1 48%;
+            }
+            #col2{
+                flex: 0 1 48%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="masthead">
+            <img src="img/logo.png" id="logo" alt="Luca Logo">
+        </header>
+                
+        <nav id="nav">
+            <ul>
+                <li><a href="Luca_Home.html">Home</a></li>
+                <li><a href="Luca_Cast.html">Main Cast</a></li>
+                <li><a href="Luca_Theme.html">Theme</a></li>
+                <li><a href="Luca_EasterEgg.html" class="selected">Easter Egg</a></li>
+                <li><a href="Luca_Clips.html">Clips</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <br>
+            <h1>Easter Egg</h1>
+
+        <div id="article_columns">
+            <section id="col1">
+                <h2>1. Pixar Ball</h2>
+                <p style="line-height: 2em; font-size: 1.1em">
+                <img src="img/PixarBall.jpeg" class="image" alt="PixarBall">
+                Also known as the Luxo, Jr. ball, in Luca, it literally takes an eagle eyed viewer to find it. That’s because it’s stuck on a roof in Portorosso, only seen during a quick flyover when the bike race begins.</p>
+
+                <h2>2. Pizza Planet Truck</h2>
+                <p style="line-height: 2em; font-size: 1.1em">
+                <img src="img/PizzaTruck.jpeg" class="image" alt="PizzaTruck">
+                The Pizza Planet truck, a truck that is used to make deliveries for Pizza Planet in Toy Story, appears in the form of a Piaggio Ape (a three-wheeled scooter wagon) parked on a street in Portorosso.</p>
+            </section>
+            <section id="col2">
+                <h2>3. Zip Code</h2>
+                <p style="line-height: 2em; font-size: 1.1em">
+                <img src="img/ZipCode.jpeg" class="image" alt="ZipCode">
+                The number at the front of the train is 96408, the postal code for Emeryville, California. That is also where Pixar's headquarter is located.</p>
+
+                <h2>4. 20,000 Leagues Under the Sea</h2>
+                <p style="line-height: 2em; font-size: 1.1em">
+                <img src="img/SeaPoster.jpeg" class="image" alt="TalePoster">
+                Set in the mid-century, it’s no wonder that the local movie theater in Portorosso is playing the latest Walt Disney Pictures release, 20,000 Leagues Under the Sea. When Luca participates in the swimming competition, he wears a Jules Verne-style diving suit to hide his seamonster identity, just like the suits worn in the 1954 classic.</p>
+            </section>
+        </div>
+        </article>
+
+        <footer>&copy; 2021 Ting Chang</footer>
+    </div>
+</body>
+
+</html>

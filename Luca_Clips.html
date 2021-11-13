@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>LUCA</title>
+    <style>
+        #wrapper{
+            font-family: Arial, Helvetica, sans-serif;
+            width:100%;
+            max-width:1170px;
+            min-width:300px;
+            background-color: #fff;
+            margin: 0 auto;
+            color: rgb(65, 65, 65);
+        }
+
+        #masthead{
+            box-sizing: border-box;
+            height: 450px;
+            padding: 0;
+            position: relative;
+            background-color: #fff;
+            background-image: url(img/hero1.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;   
+            background-position: center top;
+        }
+
+        #masthead h1{
+            font-family: Helvetica, sans-serif;
+            text-align: right;
+            color: #ff8f00;
+            font-size: 1.8em;
+            padding: 0.2em;
+            text-shadow: 0 0 3px #000;
+            margin: 0 0.5em;
+        }
+
+        #logo{
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+       
+        header, article, footer{
+            padding:1em;
+        }
+
+        #flexbox_gallery{
+		margin: 2.5em 0 0 0;
+        }
+
+        #flexbox_gallery div{
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #flexbox_gallery div div{
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.5em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            margin: 1em 0;
+        }
+
+        #trailer{
+            height: 300px;
+            width: 450px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #clip{
+            height: 300px;
+            width: 450px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        @media screen and (min-width:576px) {
+            #flexbox_gallery div div{
+                flex-basis: 32%;
+            }
+            #trailer{
+            height: 450px;
+            width: 700px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+            .responsive_image{
+                height: 250px;
+            }
+           
+            #article_columns{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #col1{
+                flex: 0 1 48%;
+            }
+            #col2{
+                flex: 0 1 48%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="masthead">
+            <img src="img/logo.png" id="logo" alt="Luca Logo">
+        </header>
+                
+        <nav id="nav">
+            <ul>
+                <li><a href="Luca_Home.html">Home</a></li>
+                <li><a href="Luca_Cast.html">Main Cast</a></li>
+                <li><a href="Luca_Theme.html">Theme</a></li>
+                <li><a href="Luca_EasterEgg.html">Easter Egg</a></li>
+                <li><a href="Luca_Clips.html" class="selected">Clips</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <br>
+            <h1>Clips</h1>
+            <br>
+            <h2>Trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mYfJxlgR2jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="trailer"></iframe>
+            <div id="article_columns">
+            <section id="col1">
+                <h2>Sea Monster Clip</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LPkoCqMiBFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="clip"></iframe>
+            </section>
+
+            <section id="col2">
+                <h2>Friendship Featurette</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N6DY_IkzPCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="clip"></iframe>
+            </section>
+        </div>
+        <br>
+        </article>
+        <footer>&copy; 2021 Ting Chang</footer>
+    </div>
+</body>
+
+</html>
